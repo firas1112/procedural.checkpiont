@@ -1,0 +1,26 @@
+    function dot(v,u){
+    if(u.length!=v.length)
+    return 'not equal'
+    else{
+    s=0
+    for (let i = 0; i < v.length; i++) {
+  s+=u[i]*v[i]
+}
+  if(s===0)
+  return "they're ortho"
+  else
+  return s
+  }
+    }
+    v1=[2,5,4,7,8]
+    v2=[8,2,8,5,2]
+    v3=[8,9,4,7,2]
+    v4=[7,5,8,4]
+    v5=[-3,1,1]
+    v6=[1,2,1]
+//v7={i:5,j:9,k:0}
+    z=[[v1,v2],[v3,v4],[v5,v6]]
+    for (let i = 0; i < z.length; i++) {
+    a=dot(z[i][0],z[i][1])
+    console.log(a)
+}
